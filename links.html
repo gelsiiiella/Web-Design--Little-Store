@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halamanita Links and Contact</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            line-height: 1.6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 0;
+        }
+        .banner {
+            grid-column: 1 / span 12;
+            background-color: #5F8D4E;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width:98%;
+            z-index: 999;
+        }
+        .banner h1 {
+            margin: 0;
+            margin-left: 90px; 
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #285430;
+        }
+        .footer {
+            grid-column: 1 / span 12;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            margin-top: 80px;
+            grid-column: 2 / span 10;
+            padding: 20px;
+        }
+        .section-heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            grid-column: 2 / span 8;
+            margin-top: 20px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .social-media-item {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .social-media-item h3 {
+            margin-bottom: 10px;
+        }
+        .social-media-item p {
+            margin-bottom: 10px;
+        }
+        .social-media-item img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .social-media-item a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: #285430;
+            padding: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .social-media-item a:hover {
+            background-color: #555;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="Assets/halamanita_logo.png" style="margin-right: 10px;width:70px;height:70px;">
+            <h1>HALAMANITA</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section">
+            <br><br>
+            <h1>Connect with Us</h1>
+            <div class="section-content">
+            <p>Welcome to Halamanita's Links and Social Media page! Here, you'll find a gateway to our vibrant online website and an array of resources to enrich your gardening experience.</p>
+            </div>
+            <h2 class="section-heading">Website</h2>
+            <div class="section-content">
+                <p>Explore our comprehensive website to discover our full range of products and services, access helpful gardening tips and guides, and stay updated on the latest news and promotions from Halamanita.</p>
+                <a href="index.html">Visit Website</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Follow Us on Social Media</h2>
+            <div class="section-content">
+                <div class="social-media-item">
+                    <img src="Assets/facebook-logo_1384863.png" alt="Facebook">
+                    <h3>Facebook</h3>
+                    <p>Like our Facebook page for daily doses of gardening inspiration, informative articles, and behind-the-scenes glimpses into the world of Halamanita. Join our growing community of followers and engage in lively discussions about all things plants.</p>
+                    <a href="https://www.facebook.com/">Follow on Facebook</a>
+                </div>
+                <div class="social-media-item">
+                    <img src="Assets/instagram_408758.png" alt="Instagram">
+                    <h3>Instagram</h3>
+                    <p>Follow us on Instagram for visually stunning snapshots of our lush plant collections, user-submitted garden photos, and exclusive giveaways. Tag us in your gardening adventures using #Halamanita and become part of our Instagram family.</p>
+                    <a href="https://www.instagram.com/">Follow on Instagram</a>
+                </div>
+                <div class="social-media-item">
+                    <img src="Assets/twitter.png" alt="Twitter">
+                    <h3>Twitter</h3>
+                    <p>Stay up-to-date with the latest updates and announcements from Halamanita by following us on Twitter. From gardening tips and product launches to eco-friendly initiatives and community events, our tweets keep you informed and inspired.</p>
+                    <a href="https://twitter.com/">Follow on Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Get in Touch</h2>
+            <div class="section-content">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <br><br><br><br>
+        </div>
+        
+
+        <footer class="footer">
+            <p style="text-align: center;">&copy; 2024 Halamanita Store by Angela Samboa. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

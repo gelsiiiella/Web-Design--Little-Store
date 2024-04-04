@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halamanita Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            line-height: 1.6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 30px;
+        }
+        .banner {
+            grid-column: 1 / span 12;
+            background-color:#5F8D4E;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width:98%;
+            z-index: 999;
+        }
+        .banner h1 {
+            margin: 0;
+            margin-left: 90px; 
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #285430;
+        }
+        .products-container {
+            margin-top: 50px;
+            grid-column: 2 / span 10;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .product {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product h2 {
+            margin: 10px 0;
+            transition: color 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product:hover img {
+            transform: scale(1.1);
+        }
+        .product:hover h2 {
+            color: #285430;
+        }
+        .category-title {
+            grid-column: span 12;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .comments-container {
+            grid-column: 2 / span 10;
+        }
+        .comment {
+            margin-bottom: 10px;
+            grid-column: 1 / span 12;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            grid-column: 1 / span 12;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .products-container {
+                grid-column: span 12;
+            }
+            .comments-container {
+                grid-column: span 12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="Assets/halamanita_logo.png" alt="Logo" style="margin-right: 10px;width:70px;height:70px;">
+            <h1>HALAMANITA</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    
+        <h2 class="category-title">Filipino Fruit Seeds</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Assets/carabao_mango.png">
+                <h2>Carabao Mango (Mangifera indica)</h2>
+                <div class="description">
+                    <p>Delight in the tropical sweetness of Carabao Mangoes, known for their luscious texture and rich flavor. Cultivate your own mango tree at home and experience the joy of harvesting these golden fruits straight from your garden.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/pomelo.png">
+                <h2>Davao Pomelo (Citrus maxima)</h2>
+                <div class="description">
+                    <p>Experience the refreshing burst of citrus with Davao Pomelo seeds. These large, juicy fruits are prized for their sweet-tart flavor and are perfect for enjoying fresh or adding to salads and desserts. Grow your own pomelo tree and savor the taste of this tropical delight.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/banana.png">
+                <h2>Philippine Banana </h2>
+                <div class="description">
+                    <p>Embark on a journey to the tropics with Philippine Banana seeds. Grow your own banana tree and indulge in the creamy, sweet bananas that are a staple in Filipino cuisine. Whether eaten fresh, cooked, or used in smoothies, bananas are a versatile and nutritious treat.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="category-title">Flower Seeds</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Assets/sampaguita.png">
+                <h2>Sampaguita (Jasminum sambac)</h2>
+                <div class="description">
+                    <p>Immerse yourself in the enchanting fragrance of Sampaguita flowers. These delicate white blooms are revered for their sweet scent and are often used in religious ceremonies and floral garlands. Cultivate your own Sampaguita plants and fill your garden with their heavenly perfume.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/ylang.png">
+                <h2>Ylang-Ylang (Cananga odorata)</h2>
+                <div class="description">
+                    <p>Discover the exotic allure of Ylang-Ylang flowers with their intoxicating aroma reminiscent of jasmine and neroli. These yellow blossoms are prized for their essential oil, which is used in perfumery and aromatherapy. Plant Ylang-Ylang seeds and create a sensory oasis in your garden.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/gumamela.png">
+                <h2>Gumamela (Hibiscus rosa-sinensis)</h2>
+                <div class="description">
+                    <p>Add a pop of color to your garden with Gumamela seeds. These vibrant Hibiscus flowers come in various shades of red, pink, orange, and yellow, and their trumpet-shaped blooms attract butterflies and hummingbirds. Grow your own Gumamela plants and enjoy a riot of color in your outdoor space.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="category-title">Indoor Plants</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Assets/snak_plant.png">
+                <h2>Snake Plant (Sansevieria trifasciata)</h2>
+                <div class="description">
+                    <p>Embrace the sleek elegance of Snake Plants, also known as Mother-in-Law's Tongue. These hardy plants feature tall, sword-shaped leaves with striking variegated patterns, making them a stylish addition to any indoor setting. Enjoy the air-purifying benefits of Snake Plants while adding a touch of modern sophistication to your home decor.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/golden.png">
+                <h2>Golden Pothos</h2>
+                <div class="description">
+                    <p>This trailing vine plant is renowned for its resilience and ability to thrive in low-light conditions, making it perfect for beginners and seasoned plant enthusiasts alike. Watch as its heart-shaped leaves cascade gracefully from hanging baskets or climb trellises, adding lush greenery to your indoor space.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/peace.png">
+                <h2>Peace Lily (Spathiphyllum spp.)</h2>
+                <div class="description">
+                    <p>Create a serene oasis in your home with Peace Lilies, prized for their elegant white blooms and glossy green foliage. These low-maintenance plants are known for their air-purifying qualities, making them ideal for bedrooms, offices, or any space where you want to promote a sense of calm and well-being. Enjoy the beauty and tranquility that Peace Lilies bring to your indoor environment.</p>
+                </div>
+            </div>
+        </div>
+
+   
+        <h2 class="category-title">Custom Seed Mixes</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="Assets/cherry_tomatoes.png">
+                <h2>Cherry Tomato Medley</h2>
+                <div class="description">
+                    <p>Embark on a culinary adventure with our Cherry Tomato Medley seed mix, featuring a variety of cherry tomato cultivars in different colors, shapes, and flavors. From sweet Sungold to tangy Black Cherry, this mix promises a bounty of flavorful tomatoes for salads, sauces, and snacking.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/butterfly.png">
+                <h2>Butterfly Garden Mix</h2>
+                <div class="description">
+                    <p>Transform your garden into a haven for butterflies with our Butterfly Garden Mix seed blend. This curated selection of nectar-rich flowers, including Butterfly Bush, Lantana, and Coneflower, will attract these beautiful pollinators to your garden, adding color and movement to your outdoor space.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="Assets/hummingbird.png">
+                <h2>Hummingbird Attractor Mix</h2>
+                <div class="description">
+                    <p>Bring the magic of hummingbirds to your garden with our Hummingbird Attractor Mix seed blend. Featuring brightly colored flowers such as Salvia, Fuchsia, and Bee Balm, this mix will entice these tiny marvels with their nectar-rich blooms, providing endless entertainment and joy as they flit and hover among the flowers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sample Comments and Reviews Container -->
+        <div class="comments-container">
+            <h2>Comments and Reviews</h2>
+            <div class="comment">
+                <p>"I recently purchased some Carabao Mango seeds from Halamanita, and I couldn't be happier with the quality! The seeds sprouted quickly, and now I have a beautiful mango tree growing in my backyard. Highly recommend!" ⭐⭐⭐⭐⭐
+                    Maria S.
+                    </p>
+            </div>
+            <div class="comment">
+                <p>"I've always wanted to grow my own indoor garden, and Halamanita made it possible! Their selection of indoor plants is fantastic, and the customer service is top-notch. Will definitely be buying from them again!" ⭐⭐⭐⭐⭐
+                    John P.
+                    </p>
+            </div>
+            <div class="comment">
+                <p>"I ordered some Sampaguita seeds for my garden, and I'm amazed at how quickly they bloomed! The flowers are so fragrant and beautiful. Thank you, Halamanita, for providing such high-quality seeds." ⭐⭐⭐⭐⭐
+                    Sofia L.
+                    </p>
+            </div>
+            <div class="comment">
+                <p>"Halamanita's custom seed mixes are a game-changer! I requested a mix of edible plants for my small balcony garden, and they delivered exactly what I needed. Now I have fresh herbs and veggies right at my fingertips. Love it!" ⭐⭐⭐⭐⭐
+                    Michael R.
+                    </p>
+            </div>
+            <div class="comment">
+                <p>"The indoor plants I ordered from Halamanita arrived in perfect condition, thanks to their careful packaging. It's clear that they take pride in their products and want to ensure customer satisfaction. I'm thrilled with my purchase!" ⭐⭐⭐⭐⭐
+                    Emily H.
+                    </p>
+            </div>
+ 
+        </div>
+
+        <footer class="footer">
+            <p style="text-align: center;">&copy; 2024 Halamanita Store by Angela Samboa. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

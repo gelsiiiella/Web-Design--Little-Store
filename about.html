@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halamanita Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            line-height: 1.6;
+            margin-bottom: 20px; 
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 0;
+        }
+        .banner {
+            grid-column: 1 / span 12;
+            background-color: #5F8D4E;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width:98%;
+            z-index: 999;
+        }
+        .banner h1 {
+            margin: 0;
+            margin-left: 90px; 
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #285430;
+        }
+        .content1 {
+            grid-column: 3 / span 8; 
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            grid-gap: 5px;
+            margin-top: 120px;
+            height:max-content;
+            text-align: justify;
+            align-items: center;
+        }
+        .content1 img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            width: 90px;
+            height:90px;
+        }
+        .footer {
+            grid-column: 1 / span 12;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .content1 {
+                grid-column: 2 / span 12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="Assets/halamanita_logo.png" style="margin-right: 10px;width:70px;height:70px;">
+            <h1>HALAMANITA</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content1">
+            <img src="Assets/logo_h.png">
+            <p>Welcome to Halamanita, your one-stop destination for Filipino fruit seeds, flowers, and indoor plants. Inspired by the rich biodiversity and cultural heritage of the Philippines, Halamanita is dedicated to promoting the beauty and diversity of our native flora.</p>
+            <p>At Halamanita, we take pride in offering a handpicked selection of seeds from beloved Filipino fruits such as mango, lanzones, and avocado, allowing you to cultivate your own orchard and experience the joy of homegrown produce. Our collection also includes seeds of indigenous flowers like sampaguita, ylang-ylang, and gumamela, adding a touch of Filipino charm to your garden or indoor oasis.</p>
+            <p>In addition to our premium seeds, we specialize in providing a carefully curated assortment of indoor plants, chosen for their aesthetic appeal and air-purifying properties. Whether you're a seasoned gardener or just starting your green journey, our team is here to offer expert advice and guidance every step of the way.</p>
+            <p>But Halamanita is more than just a store—it's a community hub for plant enthusiasts and nature lovers alike. Through our garden consultation services, plant care workshops, and community gardening programs, we strive to empower individuals to connect with nature, cultivate sustainable habits, and create vibrant green spaces that enrich lives and inspire growth.</p>
+            <p>Experience the beauty of Filipino flora with Halamanita. Let's grow together.</p>
+        </div>
+
+
+        <footer class="footer">
+            <p style="text-align: center;">&copy; 2024 Halamanita Store by Angela Samboa All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
